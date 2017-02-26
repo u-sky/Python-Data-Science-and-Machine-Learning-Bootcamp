@@ -1,0 +1,4 @@
+Conda environment create
+https://conda.io/docs/using/envs.html#create-an-environment
+
+activate {envname}ではなくsource activate {envname}っぽいが、それを実行すると落ちてしまうみたい。
