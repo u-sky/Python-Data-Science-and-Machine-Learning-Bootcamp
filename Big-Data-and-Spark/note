@@ -1,0 +1,12 @@
+log in to AWS with ssh
+
+
+ssh -i newspark.pem  ubuntu@ec2-54-214-56-158.us-west-2.compute.amazonaws.com
+
+
+なぜかログインするたびにPATHがリセットされるようなので以下のPATHを通してから作業する
+Add path
+$ export PATH="$PATH:/home/ubuntu/anaconda3/bin"
+$ export SPARK_HOME='/home/ubuntu/spark-2.0.0-bin-hadoop2.7'
+$ export PATH=$SPARK_HOME:$PATH
+$ export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH
